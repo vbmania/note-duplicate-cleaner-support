@@ -28,18 +28,20 @@
   <h2>Apple Notes access</h2>
   <p>With the user's macOS permission, the app reads note titles, bodies, identifiers, account and folder identifiers, and modification dates needed to detect exact duplicates and preserve their source locations. It can move confirmed duplicate notes to <code>[NDC] Undo Queue</code> and restore them.</p>
   <h2>Local storage</h2>
-  <p>Scan results and the undo journal are stored locally in the app's sandbox container. The undo journal contains note identifiers and source folder identifiers needed for restoration. Note bodies are not stored in the undo journal.</p>
+  <p>Scan results are stored locally in the app's sandbox container and can include note identifiers, titles, account and folder names, modification dates, and short text previews needed to review duplicate groups. The undo journal contains note titles, identifiers, and source account and folder identifiers needed for restoration; it does not store note bodies.</p>
+  <p>The local diagnostic file records operation status and counts without note titles, note identifiers, account names, folder names, or note contents.</p>
+  <h2>User exports</h2>
+  <p>If the user chooses Export Results or exports the error list, the app writes a JSON or CSV file to the location selected by the user. Result exports can contain note identifiers, titles, account and folder names, modification dates, and short text previews. These files remain under the user's control and are not uploaded by the app.</p>
   <h2>Network use</h2>
   <p>The app does not send Apple Notes data or app usage data over the network.</p>
   <h2>Deletion and control</h2>
-  <p>Users can remove scan history and completed undo records in the app. Moved notes remain under the user's control in Apple Notes. Deleting the app removes its sandbox data according to macOS behavior but does not delete the user's Apple Notes.</p>
+  <p>Users can delete saved scan history, diagnostic logs, and undo records in the app. Deleting scan history affects only the app's saved results and does not change Apple Notes or the undo queue. Moved notes remain under the user's control in Apple Notes. Deleting the app removes its sandbox data according to macOS behavior but does not delete the user's Apple Notes.</p>
   <h2>Apple services</h2>
   <p>Apple may process App Store purchases, downloads, diagnostics, or other platform information under Apple's own terms and privacy policy. AI Workers Lab does not receive Apple Notes content from Apple.</p>
   <h2>Changes and support</h2>
-  <p>If the app's data practices change, this policy will be updated before the new behavior is released. Questions can be submitted through the <a href="https://github.com/vbmania/note-duplicate-cleaner-support/issues">support issue tracker</a>.</p>
+  <p>If the app's data practices change, this policy will be updated before the new behavior is released. For support or privacy questions, email <a href="mailto:contact.aiworkerslab@gmail.com">contact.aiworkerslab@gmail.com</a>. No GitHub account is required. Please do not send note contents, passwords, or payment details. Information you voluntarily email is used to respond to your inquiry; email is handled by the email service provider and is separate from the app's local Notes processing.</p>
   <p>© 2026 AI Workers Lab.</p>
 </article>
 </main>
 </body>
 </html>
-
